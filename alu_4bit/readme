@@ -1,0 +1,8 @@
+This directory contains python and verilog files for
+  four bit ALU. The specifications are as follows:
+ALU supports 4 instructions. Add, Subtract, Multiply and divide. 
+The 2 ALU inputs are 4 bit each. 
+There is be start, clock and reset inputs. 
+The ALU output is 8 bits. 
+The done output indicates operation is done. 
+The error output indicates an error such as division by zero.
