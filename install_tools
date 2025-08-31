@@ -1,0 +1,31 @@
+Right Click windows icon
+Choose Terminal(Admin) to open Windows powershell windows, Click Yes
+// install git on PC
+winget install --id Git.Git -e --source winget
+git --version
+// gives a valid response if git is correctly installed
+// git version 2.51.0.windows.1
+
+// install python on PC
+winget install Python.Python.3.11
+python --version
+// python 3.11.9
+
+// install ivarcus Verilog Simulation environment
+using a browser go to https://bleyer.org/icarus/
+click on the latest windows version eg iverilog-v12-20220611-x64_setup.exe
+// https://bleyer.org/icarus/iverilog-v12-20220611-x64_setup.exe
+Download on your PC
+Click downloaded executable to install
+// verify installation
+iverilog -v
+// Icarus Verilog version 12.0 (stable)
+
+// install gtkwave
+Using a browswer go to https://sourceforge.net/projects/gtkwave/files/
+Look for a version with win64 in it e.g gtkwave-3.3.100-bin-win64
+// https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win64/
+Click downloaded executable to install
+// verify installation
+gtkwave --version
+// GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
