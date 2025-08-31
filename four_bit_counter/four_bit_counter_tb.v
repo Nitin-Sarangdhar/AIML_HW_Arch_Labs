@@ -25,6 +25,10 @@ module counter_tb;
 
     // The initial block defines the test stimulus.
     initial begin
+        // These two lines are crucial for VCD output.
+        // They must be placed at the start of your initial block.
+        $dumpfile("four_bit_counter_tb.vcd"); // Creates the VCD file with the specified name
+        $dumpvars(0, counter_tb);   // Dumps all signals from the specified module
         // Display header for the simulation output.
         $display("Time\tCLK\tReset\tQ");
         $display("--------------------------------");
