@@ -1,0 +1,34 @@
+// This file describes how to run simulation of any design
+Right Click windows icon
+Choose Terminal(Admin) to open Windows powershell terminal, Click Yes
+cd AIML_HW_Arch_Labs
+
+// The following instructions describe how to run python functional simulation
+idle
+// This will open idle window
+click file open xxx/xxx.py // e.g AND2/and2
+// This will open and2.py in a new windows
+click run
+click run module
+// This will display the output in the Idle window
+// Observe the output to ensure you understand the functionality
+
+// The following instructions describe how to run verilog behavioral simulation
+// In Windows powershell terminal
+cd xxx  // e.g. AND2
+iverilog -o my_simulation xxx.v xxx_tb.v // e.g. and_gate.v and_gate_tb.v
+vvp my_simulation
+// This will display the output of the simulation on the terminal
+// make sure that you understand the output
+
+// The following instructions describe how to observe the waveforms
+gtkwave xxx_tb.vcd // e.g. and_gate_tb.vcd
+// This will open gtkwave waveform application
+click on xxx_tb  // e.g. and_gate_tb
+// This will open all the signals in the signals windows
+Select all signals and click insert // e.g. reg_Ain, reg_Bin, wire Yout
+// this will show all signals in the waves window
+click Time click Zoom click Zoom Best Fit
+Observe the waveforms and make sure you understand the output
+
+Close all windows
