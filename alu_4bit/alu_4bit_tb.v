@@ -30,6 +30,12 @@ module alu_4bit_tb;
 
     // Initial block to apply stimulus to the ALU.
     initial begin
+        // These two lines are crucial for VCD output.
+        // They must be placed at the start of your initial block.
+        $dumpfile("alu_4bit_tb.vcd"); // Creates the VCD file with the specified name
+        $dumpvars(0, alu_4bit_tb);   // Dumps all signals from the specified module
+
+    
         // Display header
         $display("Time\tCLK\tStart\tReset\tOpcode\tA\tB\tResult\tDone\tError");
         $display("------------------------------------------------------------------");
