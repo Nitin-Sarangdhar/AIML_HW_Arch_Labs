@@ -14,6 +14,10 @@ module d_flip_flop_tb;
 
     // Initial block to apply stimulus
     initial begin
+        // These two lines are crucial for VCD output.
+        // They must be placed at the start of your initial block.
+        $dumpfile("d_flip_flop_tb.vcd"); // Creates the VCD file with the specified name
+        $dumpvars(0, d_flip_flop_tb);   // Dumps all signals from the specified module
         // Display header
         $display("Time\tD\tCLK\tReset\tQ");
         $display("--------------------------");
