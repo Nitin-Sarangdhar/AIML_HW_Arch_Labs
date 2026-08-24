@@ -1,0 +1,9 @@
+Start a google collab session at collab/google.com
+File > New Notebook in Drive
+File > upload notebook
+Browse to AIML_HW_ARCH_labs/collab/OR2.ipynb
+After the file is uplaoded as a collab notebook, 
+RUNTIME>  run all
+Walk through the entire notebook and understand the steps
+Observe the waveforms to make sure that you understand them
+Repeat steps 4 to 8 for AND2.ipynb, DFF.ipynb. counter4b.ipynb and alu4b.ipynb
